@@ -1,15 +1,13 @@
 {
-   "webcredentials": {
-       "apps": ["36SR2RBZP8.com.nimblecommerce.bluedotdeals"]
-    }
+	"webcredentials": {
+		"apps": ["36SR2RBZP8.com.nimblecommerce.bluedotdeals"]
+	},
 
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "36SR2RBZP8.com.nimblecommerce.bluedotdeals",
-                "paths": ["*"]
-            }
-        ]
-    }
+	"applinks": {
+		"apps": [],
+		"details": [{
+			"appID": "36SR2RBZP8.com.nimblecommerce.bluedotdeals",
+			"paths": ["*"]
+		}]
+	}
 }
