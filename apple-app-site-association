@@ -7,7 +7,7 @@
 		"apps": [],
 		"details": [{
 			"appID": "YUP3HBS5E8.dk.sweetdeal.iphone",
-			"paths": ["*/*.index.html"]
+			"paths": ["*/category/*"]
 		}]
 	}
 }
