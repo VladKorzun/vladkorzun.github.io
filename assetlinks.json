@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.giftcards.android.config.dev.debug",
+    "sha256_cert_fingerprints":
+    ["7A:C5:F4:3B:88:2C:99:15:DD:DE:1F:4B:C8:82:12:0D:DF:C8:9A:35:CF:FA:87:D9:81:73:2A:84:A0:D6:91:BD"]
+  }
+}]
