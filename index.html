@@ -4,8 +4,47 @@
     <script type="text/javascript">
         function onLoad() {
             var now = new Date().getTime();
-            var page_load_time = now - performance.timing.navigationStart;
-            alert("User-perceived page loading time: " + page_load_time);
+            var pageLoadTime = now - performance.timing.navigationStart;
+            var unloadEventStart = now - performance.timing.unloadEventStart;
+            var unloadEventEnd = now - performance.timing.unloadEventEnd;
+            var redirectStart = now - performance.timing.redirectStart;
+            var redirectEnd = now - performance.timing.redirectEnd;
+            var fetchStart = now - performance.timing.fetchStart;
+            var domainLookupStart = now - performance.timing.domainLookupStart;
+            var domainLookupEnd = now - performance.timing.domainLookupEnd;
+            var connectStart = now - performance.timing.connectStart;
+            var connectEnd = now - performance.timing.connectEnd;
+            var secureConnectionStart = now - performance.timing.secureConnectionStart;
+            var requestStart = now - performance.timing.requestStart;
+            var responseStart = now - performance.timing.responseStart;
+            var responseEnd = now - performance.timing.responseEnd;
+            var domLoading = now - performance.timing.domLoading;
+            var domInteractive = now - performance.timing.domInteractive;
+            var domContentLoadedEventStart = now - performance.timing.domContentLoadedEventStart;
+            var domContentLoadedEventEnd = now - performance.timing.domContentLoadedEventEnd;
+            var loadEventStart = now - performance.timing.loadEventStart;
+            var loadEventEnd = now - performance.timing.loadEventEnd;
+            
+            alert("pageLoadTime = " + pageLoadTime +"\n"+
+                 "unloadEventStart = " + unloadEventStart +"\n"+
+                 "unloadEventEnd = " + unloadEventEnd +"\n"+
+                 "redirectStart = " + redirectStart +"\n"+
+                 "redirectEnd = " + redirectEnd +"\n"+
+                 "fetchStart = " + fetchStart +"\n"+
+                 "domainLookupStart = " + domainLookupStart +"\n"+
+                 "domainLookupEnd = " + domainLookupEnd +"\n"+
+                 "connectStart = " + connectStart +"\n"+
+                 "connectEnd = " + connectEnd +"\n"+
+                 "secureConnectionStart = " + secureConnectionStart +"\n"+
+                 "requestStart = " + requestStart +"\n"+
+                 "responseStart = " + responseStart +"\n"+
+                 "responseEnd = " + responseEnd +"\n"+
+                 "domLoading = " + domLoading +"\n"+
+                 "domInteractive = " + domInteractive +"\n"+
+                 "domContentLoadedEventStart = " + domContentLoadedEventStart +"\n"+
+                 "domContentLoadedEventEnd = " + domContentLoadedEventEnd +"\n"+
+                 "loadEventStart = " + loadEventStart +"\n"+
+                 "loadEventEnd = " + loadEventEnd +"\n"+);
         }
     </script>
 </head>
