@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <script type="text/javascript">
+        function onLoad() {
+            var now = new Date().getTime();
+            var page_load_time = now - performance.timing.navigationStart;
+            alert("User-perceived page loading time: " + page_load_time);
+        }
+    </script>
 </head>
-<body>
+<body onload="onLoad()">
     <iframe width="1920" height="1080" src="https://www.youtube.com/embed/Bey4XXJAqS8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
 </html>
